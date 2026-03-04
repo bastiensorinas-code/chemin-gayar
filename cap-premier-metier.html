@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cap Premier Métier – Chemin Gayar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--vert:#1F3C2F;
+--ocre:#C2A14D;
+--fond:#F5F3EF;
+--texte:#222;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--fond);
+color:var(--texte);
+line-height:1.8;
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond',serif;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:0 20px;
+}
+
+section{
+padding:100px 0;
+}
+
+section:nth-child(even){
+background:white;
+}
+
+section:nth-child(odd){
+background:#F5F3EF;
+}
+
+.main-header{
+background:white;
+padding:25px 0;
+border-bottom:1px solid #eee;
+}
+
+.header-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo img{
+height:85px;
+}
+.hero-list{
+list-style:none;
+margin-top:20px;
+}
+
+.hero-list li{
+font-size:18px;
+margin-bottom:10px;
+padding-left:22px;
+position:relative;
+}
+
+.hero-list li::before{
+content:"—";
+position:absolute;
+left:0;
+color:var(--ocre);
+font-weight:bold;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:var(--vert);
+font-size:14px;
+}
+.cta-final{
+margin-top:40px;
+}
+nav a:hover{
+color:var(--ocre);
+}
+
+/* HERO */
+.hero{
+  background:url("chemin2.jpg") center/cover no-repeat!important;
+  color:white;
+  padding:160px 0;
+  position:relative;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(31,60,47,0.80);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+.hero h1{
+font-size:56px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:650px;
+}
+
+/* LISTES */
+
+ul{
+list-style:none;
+margin-left:0;
+}
+
+ul li{
+padding-left:20px;
+margin-bottom:8px;
+position:relative;
+}
+
+ul li::before{
+content:"—";
+position:absolute;
+left:0;
+color:var(--ocre);
+font-weight:bold;
+}
+
+/* SEANCES */
+
+.two-columns{
+display:flex;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.text{
+flex:2;
+min-width:300px;
+}
+
+/* BOUTON */
+
+.button{
+display:inline-block!important;
+margin-top:30px;
+padding:14px 30px;
+background:var(--ocre);
+color:white;
+text-decoration:none;
+border-radius:4px;
+transition:all 0.25s ease;
+}
+
+.button:hover{
+background:#a8893e;
+transform:translateY(-2px);
+}
+
+/* CTA FINAL */
+
+.cta-final{
+  background:#1F3C2F;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+
+.cta-final h2{
+  color:white;
+  font-size:42px;
+  margin-bottom:30px;
+}
+footer{
+text-align:center;
+padding:40px;
+background:white;
+font-size:14px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.two-columns{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="main-header">
+<div class="container header-content">
+
+<div class="logo">
+<img src="logo.png" alt="Chemin Gayar">
+</div>
+
+<nav>
+<a href="index.html">Accueil</a>
+<a href="cap-etudes.html">Cap Études</a>
+<a href="cap-premier-metier.html">Cap Premier Métier</a>
+<a href="qui-suis-je.html">Qui suis-je</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+</header>
+
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Cap Premier Métier</h1>
+
+<p>Avancer vers un métier qui vous correspond.</p>
+
+<p>Construire un projet clair et cohérent pour l’avenir.</p>
+<ul class="hero-list">
+
+<li>3 séances individuelles – 300 €</li>
+</ul>
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>Pour qui ?</h2>
+
+<p><strong>Pour les étudiants ou jeunes en début de vie active :</strong></p>
+
+<ul>
+<li>qui ressentent un manque de clarté dans leur direction professionnelle</li>
+<li>qui souhaitent mieux comprendre leurs motivations profondes et leurs ressources</li>
+<li>qui cherchent une direction plus alignée avec eux mêmes</li>
+<li>qui veulent poser un choix réfléchi et structurant pour la suite de leur parcours</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>Concrètement, vous repartez avec :</h2>
+
+<ul>
+<li>une compréhension claire de vos motivations et de vos compétences</li>
+<li>un métier identifié en cohérence avec votre profil</li>
+<li>une direction réaliste et structurée pour l’avenir</li>
+<li>une décision réfléchie et pleinement assumée</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>Comment se déroulent les 3 séances</h2>
+
+<div class="text">
+
+<p><strong>Séance 1 — Clarification des attentes et réalisation du test Motiva</strong><br>
+Analyse approfondie de votre situation, de vos expériences et de vos questionnements actuels. Réalisation du test Motiva afin d’objectiver vos motivations dominantes et poser un cadre de réflexion structuré.</p>
+
+<p><strong>Séance 2 — Analyse du profil et exploration des métiers</strong><br>
+Analyse détaillée de vos résultats et mise en lumière de vos dynamiques personnelles.
+Identification de métiers cohérents avec votre profil et confrontation aux réalités du terrain.</p>
+
+<p><strong>Séance 3 — Décision et plan d’action</strong><br>
+Choix d’une direction prioritaire et validation de sa cohérence.
+Définition d’un plan d’action clair, réaliste et engageant.</p>
+
+</div>
+
+<p>Des séances individuelles complémentaires peuvent être proposées si nécessaire, afin d’approfondir un point précis ou d’accompagner la mise en œuvre du projet.</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>Le cadre</h2>
+
+<ul>
+<li>Séances individuelles (1h à 1h30)</li>
+<li>Présentiel privilégié</li>
+<li>Confidentialité totale</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>Premier contact</h2>
+
+<p>Le premier rendez-vous téléphonique est gratuit afin d’échanger sur votre situation, répondre à vos questions et vérifier si l’offre correspond bien à vos besoins.</p>
+
+</div>
+
+</section>
+
+
+<section class="cta-final">
+
+<div class="container">
+
+<h2>Avancer vers un métier qui vous correspond</h2>
+
+<a href="contact.html" class="button">Prendre rendez-vous</a>
+
+</div>
+
+</section>
+<footer>
+
+© Chemin Gayar — Saint-Pierre, La Réunion
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Chemin Gayar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--vert:#1F3C2F;
+--ocre:#C2A14D;
+--fond:#F5F3EF;
+--texte:#222;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--fond);
+color:var(--texte);
+line-height:1.8;
+}
+
+h1,h2{
+font-family:'Cormorant Garamond',serif;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:0 20px;
+}
+
+section{
+padding:100px 0;
+}
+
+section:nth-child(even){
+background:white;
+}
+section:nth-child(odd){
+background:#F5F3EF;
+}
+.hero{
+background:url("chemin4.jpg") center/cover no-repeat!important;
+color:white;
+padding:160px 0;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(31,60,47,0.80);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:56px;
+margin-bottom:30px;
+}
+
+p{
+margin-bottom:18px;
+font-size:17px;
+}
+form{
+max-width:600px;
+margin:auto;
+}
+.section-title{
+font-size:34px;
+margin-bottom:30px;
+color:var(--vert);
+}
+
+.main-header{
+background:white;
+padding:25px 0;
+border-bottom:1px solid #eee;
+}
+
+.header-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo img{
+height:85px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:var(--vert);
+font-size:14px;
+}
+
+nav a:hover{
+color:var(--ocre);
+}
+
+.two-columns{
+display:flex;
+gap:50px;
+align-items:flex-start;
+flex-wrap:wrap;
+}
+
+.text{
+flex:2;
+min-width:300px;
+}
+
+.image{
+flex:1;
+}
+
+.image img{
+width:100%;
+border-radius:8px;
+box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+form{
+background:white;
+padding:40px;
+border-radius:8px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-bottom:18px;
+border:1px solid #ddd;
+border-radius:4px;
+font-family:'Inter';
+font-size:15px;
+}
+
+button{
+background:var(--ocre);
+color:white;
+border:none;
+padding:14px 28px;
+font-size:15px;
+border-radius:4px;
+cursor:pointer;
+}
+
+button:hover{
+background:#a8893e;
+}
+
+.cta-final{
+background:#1F3C2F!important;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.cta-final h2{
+color:white;
+font-size:42px;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:var(--ocre);
+color:white;
+text-decoration:none;
+border-radius:4px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:white;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="main-header">
+
+<div class="container header-content">
+
+<div class="logo">
+<img src="logo.png" alt="Chemin Gayar">
+</div>
+
+<nav>
+<a href="index.html">Accueil</a>
+<a href="cap-etudes.html">Cap Études</a>
+<a href="cap-premier-metier.html">Cap Premier Métier</a>
+<a href="qui-suis-je.html">Qui suis-je</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Contact</h1>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="two-columns">
+
+<div class="text">
+
+<h2 class="section-title">Prendre contact</h2>
+
+<p>
+Le premier échange téléphonique est gratuit afin de comprendre votre situation,
+répondre à vos questions et vérifier si l’accompagnement correspond bien à votre besoin.
+</p>
+
+<p>
+Vous pouvez laisser un message ci-dessous.
+Je vous répondrai dans les meilleurs délais.
+</p>
+
+<p>
+Basé à <strong>Saint-Pierre – La Réunion</strong><br>
+Séances en présentiel ou à distance.
+</p>
+
+</div>
+
+<div class="image">
+<img src="bastien.png" alt="Bastien Sorinas">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<form action="https://formspree.io/f/xdalqzzl" method="POST">
+
+<input type="text" name="nom" placeholder="Nom" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<textarea name="message" rows="6" placeholder="Votre message"></textarea>
+
+<button type="submit">Envoyer le message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="cta-final">
+
+<div class="container">
+
+<h2>Choisir son orientation avec clarté</h2>
+
+<a href="contact.html" class="button">Prendre rendez-vous</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© Chemin Gayar — Saint-Pierre, La Réunion
+
+</footer>
+
+</body>
+</html>
