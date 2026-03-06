@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales – Chemin Gayar</title>
+<link rel="icon" href="logo.png">
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --vert: #1F3C2F;
+  --ocre: #C2A14D;
+  --fond: #F5F3EF;
+  --texte: #222;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--fond); color: var(--texte); line-height: 1.8; }
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+.container { max-width: 900px; margin: auto; padding: 0 20px; }
+p { font-size: 16px; margin-bottom: 16px; line-height: 1.8; }
+a { color: var(--ocre); }
+
+.main-header { background: white; padding: 25px 0; border-bottom: 1px solid #eee; position: relative; }
+.header-content { display: flex; justify-content: space-between; align-items: center; }
+.logo img { height: 85px; }
+nav a { margin-left: 25px; text-decoration: none; color: var(--vert); font-size: 14px; }
+nav a:hover { color: var(--ocre); }
+nav a.active { color: var(--ocre); font-weight: 500; border-bottom: 2px solid var(--ocre); padding-bottom: 2px; }
+
+.hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 25px; height: 2px; background: var(--vert); transition: all 0.3s ease; border-radius: 2px; }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.page-hero { background: var(--vert); color: white; padding: 80px 0; }
+.page-hero h1 { font-size: 48px; }
+
+section { padding: 70px 0; }
+section:nth-child(even) { background: white; }
+section:nth-child(odd) { background: var(--fond); }
+
+h2 { font-size: 22px; color: var(--vert); margin-top: 40px; margin-bottom: 12px; }
+h2:first-child { margin-top: 0; }
+
+footer { text-align: center; padding: 40px; background: white; font-size: 14px; border-top: 1px solid #eee; }
+footer a { color: var(--vert); text-decoration: none; }
+footer a:hover { color: var(--ocre); }
+
+@media(max-width: 768px) {
+  .hamburger { display: flex; }
+  nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; border-top: 1px solid #eee; padding: 20px; flex-direction: column; z-index: 100; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+  nav.open { display: flex; }
+  nav a { margin: 0; padding: 12px 0; font-size: 15px; border-bottom: 1px solid #f0f0f0; }
+  nav a:last-child { border-bottom: none; }
+  .logo img { height: 60px; }
+  .page-hero h1 { font-size: 32px; }
+  section { padding: 50px 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container header-content">
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="Chemin Gayar"></a>
+    </div>
+    <nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html">Accueil</a>
+      <a href="cap-etudes.html">Cap Études</a>
+      <a href="cap-premier-metier.html">Cap Premier Métier</a>
+      <a href="qui-suis-je.html">Qui suis-je</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Mentions légales</h1>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <h2>Éditeur du site</h2>
+    <p>
+      Le site <strong>chemingayar.fr</strong> est édité par :<br><br>
+      <strong>Bastien Sorinas</strong><br>
+      Nom commercial : Chemin Gayar<br>
+      Micro-entreprise<br>
+      SIRET : 922 267 083 00025<br>
+      12 rue de Cayenne, 97410 Saint-Pierre, La Réunion<br>
+      Email : <a href="mailto:contact@chemingayar.fr">contact@chemingayar.fr</a>
+    </p>
+
+    <h2>Hébergeur</h2>
+    <p>
+      Ce site est hébergé par :<br><br>
+      <strong>O2switch</strong><br>
+      222-224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand<br>
+      SIRET : 510 909 807 00024<br>
+      <a href="https://www.o2switch.fr" target="_blank" rel="noopener">www.o2switch.fr</a>
+    </p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>
+      L'ensemble du contenu de ce site (textes, images, logo, structure) est la propriété exclusive de Bastien Sorinas / Chemin Gayar, sauf mention contraire. Toute reproduction, même partielle, est interdite sans autorisation préalable écrite.
+    </p>
+
+    <h2>Responsabilité</h2>
+    <p>
+      Chemin Gayar s'efforce d'assurer l'exactitude et la mise à jour des informations présentes sur ce site. Cependant, des erreurs ou omissions peuvent survenir. La responsabilité de Chemin Gayar ne saurait être engagée pour tout dommage résultant de l'utilisation de ce site.
+    </p>
+
+    <h2>Données personnelles</h2>
+    <p>
+      Les informations collectées via le formulaire de contact sont traitées conformément à notre <a href="confidentialite.html">politique de confidentialité</a>.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      Ce site n'utilise pas de cookies de traçage ou publicitaires. Aucun outil d'analyse de trafic tiers n'est installé à ce jour.
+    </p>
+
+    <h2>Droit applicable</h2>
+    <p>
+      Le présent site est soumis au droit français. En cas de litige, les tribunaux compétents sont ceux de Saint-Denis de La Réunion.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  © Chemin Gayar — Saint-Pierre, La Réunion &nbsp;·&nbsp;
+  <a href="mentions-legales.html">Mentions légales</a> &nbsp;·&nbsp;
+  <a href="confidentialite.html">Politique de confidentialité</a>
+</footer>
+<script>
+const btn = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
+btn.addEventListener('click', () => { btn.classList.toggle('open'); nav.classList.toggle('open'); });
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { btn.classList.remove('open'); nav.classList.remove('open'); }));
+</script>
+</body>
+</html>

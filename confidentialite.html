@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité – Chemin Gayar</title>
+<link rel="icon" href="logo.png">
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --vert: #1F3C2F;
+  --ocre: #C2A14D;
+  --fond: #F5F3EF;
+  --texte: #222;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--fond); color: var(--texte); line-height: 1.8; }
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+.container { max-width: 900px; margin: auto; padding: 0 20px; }
+p { font-size: 16px; margin-bottom: 16px; line-height: 1.8; }
+a { color: var(--ocre); }
+
+.main-header { background: white; padding: 25px 0; border-bottom: 1px solid #eee; position: relative; }
+.header-content { display: flex; justify-content: space-between; align-items: center; }
+.logo img { height: 85px; }
+nav a { margin-left: 25px; text-decoration: none; color: var(--vert); font-size: 14px; }
+nav a:hover { color: var(--ocre); }
+nav a.active { color: var(--ocre); font-weight: 500; border-bottom: 2px solid var(--ocre); padding-bottom: 2px; }
+
+.hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 25px; height: 2px; background: var(--vert); transition: all 0.3s ease; border-radius: 2px; }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.page-hero { background: var(--vert); color: white; padding: 80px 0; }
+.page-hero h1 { font-size: 48px; }
+
+section { padding: 70px 0; }
+section:nth-child(even) { background: white; }
+section:nth-child(odd) { background: var(--fond); }
+
+h2 { font-size: 22px; color: var(--vert); margin-top: 40px; margin-bottom: 12px; }
+h2:first-child { margin-top: 0; }
+
+footer { text-align: center; padding: 40px; background: white; font-size: 14px; border-top: 1px solid #eee; }
+footer a { color: var(--vert); text-decoration: none; }
+footer a:hover { color: var(--ocre); }
+
+@media(max-width: 768px) {
+  .hamburger { display: flex; }
+  nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; border-top: 1px solid #eee; padding: 20px; flex-direction: column; z-index: 100; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+  nav.open { display: flex; }
+  nav a { margin: 0; padding: 12px 0; font-size: 15px; border-bottom: 1px solid #f0f0f0; }
+  nav a:last-child { border-bottom: none; }
+  .logo img { height: 60px; }
+  .page-hero h1 { font-size: 32px; }
+  section { padding: 50px 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container header-content">
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="Chemin Gayar"></a>
+    </div>
+    <nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html">Accueil</a>
+      <a href="cap-etudes.html">Cap Études</a>
+      <a href="cap-premier-metier.html">Cap Premier Métier</a>
+      <a href="qui-suis-je.html">Qui suis-je</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Politique de confidentialité</h1>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <h2>Responsable du traitement</h2>
+    <p>
+      Bastien Sorinas – Chemin Gayar<br>
+      12 rue de Cayenne, 97410 Saint-Pierre, La Réunion<br>
+      Email : <a href="mailto:contact@chemingayar.fr">contact@chemingayar.fr</a>
+    </p>
+
+    <h2>Données collectées</h2>
+    <p>
+      Lors de l'utilisation du formulaire de contact, les données suivantes sont collectées :
+    </p>
+    <ul style="margin-left:20px;margin-bottom:16px;">
+      <li style="margin-bottom:6px;">Nom et prénom</li>
+      <li style="margin-bottom:6px;">Adresse email</li>
+      <li style="margin-bottom:6px;">Numéro de téléphone (optionnel)</li>
+      <li style="margin-bottom:6px;">Contenu du message</li>
+    </ul>
+
+    <h2>Finalité du traitement</h2>
+    <p>
+      Ces données sont collectées uniquement dans le but de répondre à votre demande de contact et, le cas échéant, de vous proposer un accompagnement. Elles ne sont utilisées à aucune autre fin commerciale ou publicitaire.
+    </p>
+
+    <h2>Destinataires des données</h2>
+    <p>
+      Les données collectées via le formulaire sont transmises par le service <strong>Formspree</strong> (formspree.io) et reçues uniquement par Bastien Sorinas. Elles ne sont jamais revendues ni partagées avec des tiers.
+    </p>
+
+    <h2>Durée de conservation</h2>
+    <p>
+      Vos données sont conservées le temps nécessaire au traitement de votre demande, et au maximum <strong>3 ans</strong> à compter du dernier contact.
+    </p>
+
+    <h2>Vos droits</h2>
+    <p>
+      Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :
+    </p>
+    <ul style="margin-left:20px;margin-bottom:16px;">
+      <li style="margin-bottom:6px;"><strong>Droit d'accès</strong> : obtenir une copie de vos données</li>
+      <li style="margin-bottom:6px;"><strong>Droit de rectification</strong> : corriger vos données inexactes</li>
+      <li style="margin-bottom:6px;"><strong>Droit à l'effacement</strong> : demander la suppression de vos données</li>
+      <li style="margin-bottom:6px;"><strong>Droit d'opposition</strong> : vous opposer au traitement de vos données</li>
+    </ul>
+    <p>
+      Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@chemingayar.fr">contact@chemingayar.fr</a>
+    </p>
+    <p>
+      En cas de litige, vous pouvez adresser une réclamation à la <a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a>.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      Ce site n'utilise aucun cookie de traçage, de publicité ou d'analyse d'audience. Aucune donnée de navigation n'est collectée à votre insu.
+    </p>
+
+    <h2>Sécurité</h2>
+    <p>
+      Chemin Gayar met en œuvre les mesures techniques appropriées pour protéger vos données contre tout accès non autorisé, perte ou divulgation.
+    </p>
+
+    <h2>Mise à jour</h2>
+    <p>
+      Cette politique de confidentialité peut être mise à jour à tout moment. La date de dernière mise à jour est indiquée en bas de page.<br>
+      <em>Dernière mise à jour : juin 2025</em>
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  © Chemin Gayar — Saint-Pierre, La Réunion &nbsp;·&nbsp;
+  <a href="mentions-legales.html">Mentions légales</a> &nbsp;·&nbsp;
+  <a href="confidentialite.html">Politique de confidentialité</a>
+</footer>
+<script>
+const btn = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
+btn.addEventListener('click', () => { btn.classList.toggle('open'); nav.classList.toggle('open'); });
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { btn.classList.remove('open'); nav.classList.remove('open'); }));
+</script>
+</body>
+</html>
