@@ -577,5 +577,19 @@ Traduction du choix métier en parcours de formation cohérent.</p>
   </a>
 </div>
 </footer>
+<script>
+const btn = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
+btn.addEventListener('click', () => {
+  btn.classList.toggle('open');
+  nav.classList.toggle('open');
+});
+nav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    btn.classList.remove('open');
+    nav.classList.remove('open');
+  });
+});
+</script>
 </body>
 </html>
