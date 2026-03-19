@@ -10,7 +10,6 @@
 <meta property="og:type" content="website">
 <meta name="description" content="Contactez Chemin Gayar pour un premier échange gratuit. Accompagnement à l'orientation à Saint-Pierre, La Réunion.">
 
-<link rel="canonical" href="https://chemingayar.fr/contact.html">
 <link rel="icon" href="logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
@@ -103,7 +102,7 @@ align-items:center;
 }
 
 .logo img{
-height:85px;
+height:110px;
 }
 
 nav a{
@@ -131,29 +130,12 @@ min-width:300px;
 
 .image{
 flex:1;
-text-align:center;
 }
 
 .image img{
 width:100%;
 border-radius:8px;
 box-shadow:0 12px 25px rgba(0,0,0,0.15);
-}
-
-.image-name {
-  margin-top:14px;
-  font-family:'Cormorant Garamond',serif;
-  font-size:18px;
-  color:var(--vert);
-  font-weight:600;
-}
-
-.image-role {
-  font-size:13px;
-  font-family:'Inter',sans-serif;
-  color:#777;
-  margin-top:4px;
-  letter-spacing:0.5px;
 }
 
 form{
@@ -272,7 +254,7 @@ font-size:14px;
 }
 
 @media(max-width: 768px) {
-  .logo img { height: 60px !important; }
+  .logo img { height: 80px !important; }
   .hero { padding: 100px 0 !important; }
   .hero h1 { font-size: 34px !important; }
   section { padding: 50px 0 !important; }
@@ -389,7 +371,7 @@ nav a.active {
 
 <p>
 Le premier échange téléphonique est gratuit afin de comprendre votre situation,
-répondre à vos questions et vérifier si l'accompagnement correspond bien à votre besoin.
+répondre à vos questions et vérifier si l’accompagnement correspond bien à votre besoin.
 </p>
 
 <p>
@@ -409,9 +391,7 @@ Séances en présentiel ou à distance.
 </div>
 
 <div class="image">
-  <img src="bastien.jpg" alt="Bastien Sorinas">
-  <p class="image-name">Bastien Sorinas</p>
-  <p class="image-role">Accompagnateur à l'orientation</p>
+<img src="bastien.jpg" alt="Bastien Sorinas">
 </div>
 
 </div>
@@ -484,7 +464,7 @@ form.addEventListener('submit', async function(e) {
 </section>
 
 <footer>
-  © Chemin Gayar — Saint-Pierre, La Réunion &nbsp;·&nbsp;
+  © Chemin Gayar - Saint-Pierre, La Réunion &nbsp;·&nbsp;
   <a href="mentions-legales.html" style="color:var(--vert);text-decoration:none;">Mentions légales</a> &nbsp;·&nbsp;
   <a href="confidentialite.html" style="color:var(--vert);text-decoration:none;">Politique de confidentialité</a>
 
@@ -501,9 +481,13 @@ form.addEventListener('submit', async function(e) {
 </div>
 </footer>
 
-<a href="https://wa.me/262692081872?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20votre%20accompagnement."
-   class="whatsapp-btn"
-   target="_blank"
+
+
+
+
+<a href="https://wa.me/262692081872?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20votre%20accompagnement." 
+   class="whatsapp-btn" 
+   target="_blank" 
    rel="noopener"
    aria-label="Nous contacter sur WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -519,6 +503,7 @@ btn.addEventListener('click', () => {
   btn.classList.toggle('open');
   nav.classList.toggle('open');
 });
+// Fermer le menu quand on clique sur un lien
 nav.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     btn.classList.remove('open');
