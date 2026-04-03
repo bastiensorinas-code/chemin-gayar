@@ -385,7 +385,8 @@ Séances en présentiel ou à distance.
 </p>
 
 <p style="margin-top:20px;">
-  <img src="email-contact.png" alt="Adresse email de contact" style="height:28px;vertical-align:middle;">
+  <img src="email-contact.png" alt="Adresse email de contact" style="height:28px;vertical-align:middle;display:block;margin-bottom:8px;">
+  <span style="color:var(--vert);font-size:15px;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2e4d41405a4f4d5a6e4d464b434740494f574f5c00485c">[email&#160;protected]</a></span>
 </p>
 
 </div>
@@ -427,7 +428,7 @@ Séances en présentiel ou à distance.
 
 </form>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const form = document.getElementById('contact-form');
 const confirmation = document.getElementById('confirmation');
 form.addEventListener('submit', async function(e) {
@@ -502,14 +503,3 @@ const nav = document.querySelector('nav');
 btn.addEventListener('click', () => {
   btn.classList.toggle('open');
   nav.classList.toggle('open');
-});
-// Fermer le menu quand on clique sur un lien
-nav.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    btn.classList.remove('open');
-    nav.classList.remove('open');
-  });
-});
-</script>
-</body>
-</html>
